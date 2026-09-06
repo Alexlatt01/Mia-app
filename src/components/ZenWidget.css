@@ -1,0 +1,289 @@
+.zen-widget {
+  background: rgba(142, 214, 202, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(142, 214, 202, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+}
+
+.zen-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.zen-icon {
+  color: #8ed6ca;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.zen-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.zen-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.zen-tab {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 160ms ease;
+  position: relative;
+}
+
+.zen-tab:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.zen-tab.active {
+  color: #8ed6ca;
+  border-bottom-color: #8ed6ca;
+}
+
+.zen-content {
+  min-height: 250px;
+}
+
+/* Meditation Section */
+.meditation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.meditation-timer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.timer-circle circle {
+  fill: none;
+  stroke-width: 4;
+}
+
+.timer-circle .timer-progress {
+  stroke: url(#timerGradient);
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s linear;
+}
+
+.timer-text {
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+}
+
+.timer-time {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #8ed6ca;
+}
+
+.timer-label {
+  font-size: 0.9rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.meditation-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  background: rgba(142, 214, 202, 0.3);
+  border: 1px solid rgba(142, 214, 202, 0.5);
+  color: #8ed6ca;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 160ms ease;
+}
+
+.control-btn:hover {
+  background: rgba(142, 214, 202, 0.5);
+  transform: scale(1.1);
+}
+
+.time-presets {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preset-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(142, 214, 202, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 160ms ease;
+}
+
+.preset-btn:hover:not(:disabled) {
+  background: rgba(142, 214, 202, 0.2);
+  border-color: rgba(142, 214, 202, 0.5);
+  color: #fff;
+}
+
+.preset-btn.active {
+  background: rgba(142, 214, 202, 0.4);
+  border-color: #8ed6ca;
+  color: #fff;
+}
+
+.preset-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.meditation-tips {
+  background: rgba(142, 214, 202, 0.15);
+  border: 1px solid rgba(142, 214, 202, 0.3);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.meditation-tips p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Quotes Section */
+.quotes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.quote-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(142, 214, 202, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.quote-author {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.quote-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.quote-btn {
+  background: rgba(142, 214, 202, 0.3);
+  border: 1px solid rgba(142, 214, 202, 0.5);
+  color: #8ed6ca;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 160ms ease;
+}
+
+.quote-btn:hover {
+  background: rgba(142, 214, 202, 0.5);
+  transform: scale(1.1);
+}
+
+.quote-counter {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .zen-widget {
+    padding: 16px;
+  }
+
+  .meditation-timer {
+    width: 140px;
+    height: 140px;
+  }
+
+  .timer-time {
+    font-size: 2rem;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .time-presets {
+    gap: 6px;
+  }
+
+  .preset-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

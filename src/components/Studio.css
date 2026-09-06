@@ -1,0 +1,38 @@
+.Studio {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    border: 5px solid brown;
+    border-radius: 10px;
+    margin: 0 ;
+    width: fit-content;
+    height: 250px;
+    background-color: #8eddff;
+   
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.minuti {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    word-wrap: break-word;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #71ebeb;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: blue 2px solid;
+}

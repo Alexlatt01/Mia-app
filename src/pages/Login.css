@@ -1,0 +1,52 @@
+.Background {
+  background-image: url('/sfondoLogin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.15); /* vetro trasparente */
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+
+  padding: 40px;
+  text-align: center;
+  width: 300px;
+  color: #fff; /* testo bianco per contrasto */
+}
+
+button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 160ms ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}

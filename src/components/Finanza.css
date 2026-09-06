@@ -1,0 +1,47 @@
+.Finanza {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    border: 5px solid brown;
+    border-radius: 10px;
+    margin: 0;
+    width: fit-content;
+    height: 210px;
+    background-color: #8eddff;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    padding: 20px;
+   
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    justify-content: center;
+    width: 200px;
+    padding: 8px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    display: block;
+    color: rgb(248, 247, 247);
+    word-break: break-word;
+    box-sizing: border-box;
+    border: 2px solid #71ebeb;
+    border-radius: 5px;         
+}
